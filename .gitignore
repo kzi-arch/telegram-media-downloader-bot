@@ -1,0 +1,12 @@
+cd ~/Bot_Downloader
+cat > .gitignore << EOF
+venv/
+.env
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+cookies.txt
+*.log
+EOF
