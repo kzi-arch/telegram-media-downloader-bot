@@ -1,0 +1,21 @@
+[project]
+name = "media-downloader-bot"
+version = "0.1.0"
+description = "Bot Telegram untuk mengunduh media menggunakan yt-dlp"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "python-telegram-bot[job-queue]>=21.0.0",
+    "python-dotenv>=1.0.0",
+    "yt-dlp>=2024.3.10"
+]
+
+[project.scripts]
+start-bot = "media_downloader_bot:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = []
