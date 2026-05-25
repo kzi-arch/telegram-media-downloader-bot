@@ -65,7 +65,6 @@ async def download_media(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 'http_headers': {
                     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
                 },
-                'impersonate': 'chrome-99',
                 # Vercel tidak punya instalasi Chrome lokal, cookiesfrombrowser akan menyebabkan crash
                 # Jika butuh authentikasi, aktifkan 'cookiefile' dan sertakan cookies.txt di dalam repositori
             }
